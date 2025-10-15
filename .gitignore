@@ -1,0 +1,84 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files, which are likely to contain sensitive data
+# such as passwords, private keys, and other secrets. These should not be
+# part of version control as they are data points which are potentially
+# sensitive and subject to change depending on the environment.
+*.tfvars
+*.tfvars.json
+
+# Terraform plan files
+*.tfplan
+*.tfplan.binary
+
+# Terraform override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI configuration files
+.terraformrc
+terraform.rc
+
+# Provider lock file
+# This is often committed to version control to ensure consistent provider versions.
+# However, if you prefer to manage it locally, you can uncomment the line below.
+# .terraform.lock.hcl
+
+
+
+# Byte-compiled / optimized / compressed files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Distribution / packaging
+.Python
+build/
+dist/
+venv/
+env/
+.venv/
+*.egg
+*.whl
+
+# C extensions
+*.so
+
+# Environments
+.env
+.flaskenv
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Logs and other generated files
+*.log
+*.sqlite3
+*.db
+*.csv
+*.json
+
+# Jupyter Notebook files
+.ipynb_checkpoints/
+
+# Miscellaneous
+temp/
+tmp/
