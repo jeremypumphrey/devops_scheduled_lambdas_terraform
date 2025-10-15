@@ -55,9 +55,9 @@ resource "aws_iam_role_policy" "lambda_sns_publish" {
 # ------------------------------------------------------------
 locals {
   lambdas = {
-    lambda1 = "lambda_one.py"
-    lambda2 = "lambda_two.py"
-    lambda3 = "lambda_three.py"
+    lambda1       = "lambda_one.py"
+    lambda2       = "lambda_two.py"
+    lambda3       = "lambda_three.py"
     email_results = "email_results.py"
   }
 }
