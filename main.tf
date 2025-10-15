@@ -1,6 +1,16 @@
 provider "aws" {
   region = "us-east-1"
+
+  default_tags {
+    tags = {
+      PRODUCT = "shared"
+      #   environment = "dev"
+      managed_by = "terraform"
+    }
+  }
 }
+
+
 
 # ------------------------------------------------------------
 # SNS Topic for Email Notifications
@@ -209,7 +219,7 @@ resource "aws_sfn_state_machine" "lambda_flow" {
         Type     = "Task"
         Resource = aws_lambda_function.lambda_funcs["email_results"].arn
         Parameters = {
-          "lambdaName" : "summary",
+          "lambdaName" : "Summary",
           "message" : "All parallel branches have completed successfully."
         }
         End = true
